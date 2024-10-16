@@ -1,5 +1,5 @@
-# Use a lightweight web server image
+# Use an Nginx base image
 FROM nginx:alpine
 
-# Copy the application files to the NGINX server
-COPY src/ /usr/share/nginx/html
+# Copy your web files to the Nginx directory
+COPY . /usr/share/nginx/html
